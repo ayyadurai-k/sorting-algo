@@ -11,6 +11,7 @@ int main()
     unsigned int n, i, j, k, matrix_format, matrix_value, temp, flag = 0;
     unsigned char temp_sec_key[MAX_SIZE * MAX_SIZE];
     int name_index = 0;
+    int key_index = 0; // Moved the declaration of key_index here
 
     printf("Enter the message in capital letters (max %d):\n", MAX_SIZE - 1);
     do
@@ -58,7 +59,7 @@ int main()
     printf("Matrix format is %d x %d\n", temp, temp);
     printf("Enter the encryption key within %d characters:\n", matrix_value);
 
-    int key_index = 0;
+    // key_index = 0; // Removed the redeclaration here
     do
     {
         ch = getchar();
